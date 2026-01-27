@@ -1,3 +1,4 @@
+--Customer Analysis Queries
 --Total Unique Customers
 
 SELECT 
