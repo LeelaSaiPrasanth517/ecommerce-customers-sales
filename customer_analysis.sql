@@ -29,5 +29,4 @@ SELECT customerid,
     FROM
 (SELECT customerid,count(customerid) as order_count
 FROM transactions 
-GROUP BY customerid) t
-
+GROUP BY customerid) t;
