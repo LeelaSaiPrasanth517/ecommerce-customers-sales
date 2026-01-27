@@ -10,7 +10,7 @@ SELECT customerid, sum(quantity*price*(1-discount)) as Money_spent
  FROM transactions
 GROUP BY customerid
 ORDER BY Money_spent DESC
-LIMIT 10
+LIMIT 10;
 
 --Average spend across all customers
 

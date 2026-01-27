@@ -8,7 +8,7 @@ FROM transactions
 --Total Revenue After Discount
 
 SELECT sum(quantity*price*(1-Discount))  as Revenue_after_discount
-FROM transactions
+FROM transactions;
 
 --Average Order Value 
 
@@ -19,4 +19,4 @@ FROM transactions;
 --Total Number of Orders
 
 SELECT count(DISTINCT transactionid) as total_orders
-FROM transactions
+FROM transactions;
