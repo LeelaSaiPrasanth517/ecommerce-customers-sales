@@ -1,23 +1,48 @@
 # 📊 Ecommerce Sales Analysis using SQL
 
 ## 📌 Project Overview
-
-This project focuses on analyzing ecommerce transaction data using **SQL** to extract meaningful business insights. The goal is to simulate a **real-world data analyst workflow**, where raw transactional data is transformed into actionable insights that can help stakeholders make informed decisions.
-
-The dataset is provided in CSV format and contains **customer, product, transaction, payment, and demographic information**. All analysis is performed using SQL on a single-table dataset.
+This project analyzes an ecommerce transactions dataset using **SQL** to extract meaningful business insights.  
+It demonstrates a **real-world data analyst workflow**, where raw transactional data is transformed into actionable insights for business decision-making.
 
 ---
 
 ## 🎯 Objectives
-
-* Analyze overall sales and revenue performance
-* Understand customer behavior and segmentation
-* Identify top-performing products and categories
-* Analyze the impact of discounts and payment methods
-* Perform time-based trend analysis using SQL date functions
-* Generate business insights and recommendations
+- Analyze overall sales and revenue performance  
+- Identify time-based trends in orders and revenue  
+- Understand customer behavior (repeat vs one-time customers)  
+- Evaluate product and category performance  
+- Assess the impact of discounts and payment methods  
+- Perform location and demographic-based analysis  
+- Translate SQL outputs into business insights  
 
 ---
+
+## 🗂️ Dataset Description
+**File:** `ecommerce_sales_data.csv`
+
+The dataset contains **100,000 ecommerce transactions** with attributes such as:
+- Transaction details
+- Customer information (location, age, income group, loyalty score)
+- Product and category data
+- Price and discount values
+- Payment methods
+- Transaction date and time
+
+---
+
+## 🛠️ Tools & Technologies
+- **Database:** PostgreSQL  
+- **Language:** SQL  
+- **Concepts Used:**
+  - Aggregations (`SUM`, `COUNT`, `AVG`)
+  - `GROUP BY` & `HAVING`
+  - Subqueries & CTEs
+  - Date & time functions
+  - Conditional logic (`CASE`)
+  - Business-focused analysis
+
+---
+
 
 ## 🗂️ Dataset Description
 
@@ -42,115 +67,59 @@ The dataset is provided in CSV format and contains **customer, product, transact
 
 ---
 
-## ❓ Key Business Questions Answered
+
+---
+
+## 🔍 Analysis Performed
 
 ### 1️⃣ Sales & Revenue Analysis
+- Total revenue and average order value (AOV)
+- Monthly revenue trends
+- Highest revenue month identification
 
-* What is the total revenue?
-* What is the total revenue after discounts?
-* What is the average order value (AOV)?
-* How do sales vary month-over-month?
-* Which month generates the highest revenue?
-
-### 2️⃣ Product & Category Performance
-
-* Which product categories generate the highest revenue?
-* Which categories sell the most in terms of quantity?
-* What are the top-selling products?
-* Which categories receive the highest discounts?
+### 2️⃣ Time-Based Analysis
+- Orders and revenue by month
+- Orders by day of the week
+- Peak order hours
+- Seasonal trend identification
 
 ### 3️⃣ Customer Analysis
+- Unique customer count
+- Repeat vs one-time customer classification
+- Customer spending behavior
 
-* How many unique customers are there?
-* Who are the top customers by total spend?
-* What is the average spend per customer?
-* How many repeat vs one-time customers exist?
+### 4️⃣ Product & Category Performance
+- Revenue and quantity sold by product category
+- Identification of top-performing categories
+- Analysis of low-performing categories
 
-### 4️⃣ Time-Based Analysis
+### 5️⃣ Discount & Payment Impact
+- Revenue impact of discounts
+- Relationship between discount rate and sales volume
+- Revenue contribution by payment method
 
-* Monthly order and revenue trends
-* Orders by day of the week
-* Peak sales periods
-
-### 5️⃣ Discount Impact Analysis
-
-* How much revenue is lost due to discounts?
-* Do higher discounts lead to higher quantities sold?
-* Which categories are most affected by discounts?
-
-### 6️⃣ Payment Method Analysis
-
-* Most commonly used payment methods
-* Revenue contribution by payment method
-* Comparison of COD vs online payments
-
-### 7️⃣ Location & Demographic Analysis
-
-* Revenue and orders by customer location
-* Spending patterns by age group and gender
-* Relationship between income group and spending
-* Loyalty score vs customer spend
+### 6️⃣ Location & Demographic Analysis
+- Revenue by customer location
+- Spending patterns by income group
+- Loyalty score vs customer spend analysis
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## 🧠 Key Business Insights
+- The platform generated **₹106.6M+ in total revenue** across **100,000 orders**.
+- Monthly revenue shows **seasonal variation**, with certain months outperforming others.
+- **Repeat customers contribute the majority of revenue**, indicating strong customer retention.
+- A small number of product categories drive most of the revenue.
+- Discounts increase order volume but reduce net revenue, impacting profitability.
+- Customer spending varies significantly across locations and income groups.
 
-* **Database:** PostgreSQL / MySQL (any SQL-based RDBMS)
-* **Language:** SQL
-* **Data Source:** CSV file
-* **Concepts Used:**
-
-  * Aggregations
-  * Group By & Having
-  * Subqueries
-  * Window Functions
-  * Date & Time Functions
-  * Conditional Logic (CASE)
+Detailed insights are available in **`insights.md`**.
 
 ---
 
-## 📈 Key Insights (Sample)
-
-* Certain product categories contribute disproportionately to total revenue
-* High-loyalty customers tend to spend more on average
-* Discounts increase order quantity but reduce net revenue
-* Specific locations show higher average order values
-* Sales exhibit clear monthly trends and seasonality
-
----
-
-## 💡 Business Recommendations
-
-* Focus marketing efforts on high-revenue categories
-* Introduce loyalty-based offers for high-value customers
-* Optimize discount strategies to balance volume and profitability
-* Promote preferred payment methods to reduce operational costs
-* Target high-spending locations with personalized campaigns
-
----
-
-## 📁 Project Structure
-
-```
-Ecommerce-Sales-SQL-Project/
-│
-├── data/
-│   └── ecommerce_sales_data.csv
-│
-├── sql_queries/
-│   ├── sales_analysis.sql
-│   ├── customer_analysis.sql
-│   ├── product_analysis.sql
-│   └── time_analysis.sql
-│
-├── insights/
-│   └── business_insights.md
-│
-└── README.md
-```
-
----
-
-## 🚀 Conclusion
-
-This project demonstratethe ability to use SQL to analyze real-world ecommerce data, derive insights, and translate them into business recommendations. It reflects the core skills expected from a Data Analyst, including data exploration, analytical thinking, and business understanding.
+## 📌 Business Recommendations
+- Focus on **retention strategies** to maximize customer lifetime value.
+- Plan **marketing campaigns around peak sales months**.
+- Optimize discount strategies to balance revenue and profitability.
+- Prioritize high-performing product categories.
+- Use demographic and location data for targeted promotions.
